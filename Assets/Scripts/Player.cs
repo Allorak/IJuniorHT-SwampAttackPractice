@@ -38,13 +38,14 @@ public class Player : MonoBehaviour
             Die();
     }
 
+    public void AddMoney(int reward)
+    {
+        Money += reward;
+    }
+
     private void Die()
     {
         Destroy(gameObject);
     }
 
-    private void OnEnemyDied(int reward)
-    {
-        Money += reward;
-    }
 }
